@@ -15,6 +15,7 @@
       return arr
     }
 ## 2.归并排序，基本思想是分治策略，先进行划分，然后再进行合并。
+
     function merge(left, right) {
         var tmp = []
         
