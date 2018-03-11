@@ -16,9 +16,9 @@
     }
 ## 2.归并排序，基本思想是分治策略，先进行划分，然后再进行合并。
 
-    function merge(left, right) {
+    function merge(left, right) {
         var tmp = []
-        
+
         while (left.length && right.length) {
           if (left[0] < right[0])
             tmp.push(left.shift())
@@ -29,13 +29,13 @@
         return tmp.concat(left, right)
       }
 
-      function mergeSort(a) {
+    function mergeSort(a) {
         if (a.length === 1) 
-          return a
+            return a
 
         var mid = ~~(a.length / 2)
           , left = a.slice(0, mid)
           , right = a.slice(mid)
 
         return merge(mergeSort(left), mergeSort(right))
-      }
+    }
