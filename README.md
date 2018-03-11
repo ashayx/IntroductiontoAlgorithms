@@ -1,7 +1,7 @@
 # 算法导论
 -------------------
-## 1.插入排序
-    function insertSort(arr) {
+## 1.插入排序，用于数组数据比较少时，通过比较数组中的元素，看谁大谁小，根据结果来调整元素的位置。
+    function insertSort(arr) {
       for (let i = 1; i < arr.length; i++) {
           let j = i - 1
           let key = arr[i]
@@ -13,8 +13,8 @@
       }
       return arr
     }
-## 2.归并排序
-    function merge(left, right) {
+## 2.归并排序，基本思想是分治策略，先进行划分，然后再进行合并。
+    function merge(left, right) {
         var tmp = []
         
         while (left.length && right.length) {
