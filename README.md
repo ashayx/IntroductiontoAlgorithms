@@ -1,7 +1,8 @@
 # 算法导论
 -------------------
 ## 1.插入排序，用于数组数据比较少时，通过比较数组中的元素，看谁大谁小，根据结果来调整元素的位置。
-    function insertSort(arr) {
+
+    function insertSort(arr) {
       for (let i = 1; i < arr.length; i++) {
           let j = i - 1
           let key = arr[i]
